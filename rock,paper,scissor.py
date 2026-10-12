@@ -1,10 +1,10 @@
 import random
 while True:
-    user_actoin = input("Enter a choice(rock, paper, scissors): ")
+    user_actoin = input("Enter a choice (rock, paper, scissors) : ")
     possible_actions = [ "rock","paper","scissors"]
     computer_action = random.choices(possible_actions)
     print(f"\nYou chose {user_actoin},computer chose {computer_action}.\n")
-    if user_actoin == computer_action:
+    if user_actoin == "rock" and computer_action ==['rock'] or user_actoin == "paper" and computer_action ==['paper'] or user_actoin == "scissors" and computer_action ==['scissors']:
         print(f"Both the players selected {user_actoin}.It's a tie")
     elif user_actoin == "rock":
         if computer_action == ['scissors']:
@@ -23,8 +23,8 @@ while True:
                 print("Rock smashes scissors. You lost")
     else:
         print("INVALID ANSWER")
-        continue
-    play_again = input("Play again? (y/n)")
+        continue         
+    play_again = input("Play again? (y/n):")
     if play_again != "y":
          break
    
