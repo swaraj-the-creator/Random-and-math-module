@@ -36,4 +36,4 @@ while True:
     if play_again != "y":
          break
 print(f"You won {points} times!")
-print(f"Computer won {points} times.")
+print(f"Computer won {comp} times.")
